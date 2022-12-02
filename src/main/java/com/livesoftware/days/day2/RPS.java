@@ -17,4 +17,20 @@ public enum RPS {
                 || (this == PAPER && other == ROCK)
                 || (this == SCISSORS && other == PAPER);
     }
+
+    public RPS losesTo() {
+        return switch (this) {
+            case ROCK -> PAPER;
+            case PAPER -> SCISSORS;
+            case SCISSORS -> ROCK;
+        };
+    }
+
+    public RPS winsAgainst() {
+        return switch (this) {
+            case ROCK -> SCISSORS;
+            case PAPER -> ROCK;
+            case SCISSORS -> PAPER;
+        };
+    }
 }
