@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4610008-60a3-48b7-b97a-0d7c1c86db4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day2/Day2XSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day3/Day3Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/livesoftware/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day2/RPS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day2/RPS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,6 +121,7 @@
       <workItem from="1670003656114" duration="1527000" />
       <workItem from="1670005197676" duration="214000" />
       <workItem from="1670005516361" duration="101000" />
+      <workItem from="1670099662565" duration="1865000" />
     </task>
     <servers />
   </component>
@@ -136,6 +138,22 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/livesoftware/days/day3/Day3Solution.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="line.charAt(i) - (line.charAt(i) &lt; 'a' ? 'A' : 'a') + 1" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
