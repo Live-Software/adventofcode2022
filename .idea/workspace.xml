@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4610008-60a3-48b7-b97a-0d7c1c86db4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day3/Day3Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day3/Day3XSolution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/livesoftware/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +72,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.livesoftware.days.day3" />
       <recent name="com.livesoftware.days.day2" />
     </key>
   </component>
