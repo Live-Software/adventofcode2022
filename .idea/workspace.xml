@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4610008-60a3-48b7-b97a-0d7c1c86db4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day6/Day6Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day6/Day6XSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day6" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day7/Day7Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day7/Day7XSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day7/Directory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day7/DirectoryInputMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day7/File.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day7" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/livesoftware/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/Main.java" afterDir="false" />
     </list>
@@ -21,6 +24,7 @@
       <list>
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -75,10 +79,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.livesoftware.days.day7" />
+      <recent name="com.livesoftware.days.day6" />
       <recent name="com.livesoftware.days.day5" />
       <recent name="com.livesoftware.days.day4" />
       <recent name="com.livesoftware.days.day3" />
-      <recent name="com.livesoftware.days.day2" />
     </key>
   </component>
   <component name="RunManager">
@@ -128,7 +133,8 @@
       <workItem from="1670099662565" duration="1865000" />
       <workItem from="1670170264356" duration="2033000" />
       <workItem from="1670262252886" duration="3108000" />
-      <workItem from="1670353970289" duration="921000" />
+      <workItem from="1670353970289" duration="1175000" />
+      <workItem from="1670439137922" duration="4772000" />
     </task>
     <servers />
   </component>
@@ -154,11 +160,27 @@
           <line>17</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/livesoftware/days/day7/Day7XSolution.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/livesoftware/days/day7/Day7XSolution.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/livesoftware/days/day7/Day7XSolution.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="line.charAt(i) - (line.charAt(i) &lt; 'a' ? 'A' : 'a') + 1" language="JAVA" />
+        <watch expression="input.directories.get(&quot;ptncs&quot;).getSize()" language="JAVA" />
+        <watch expression="input.getDirectories().get(&quot;tpnspw&quot;).getDirectories().values().stream().sorted((a, b) -&gt; Long.compare(b.getSize(), a.getSize())).map(Directory::getName).toList()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
