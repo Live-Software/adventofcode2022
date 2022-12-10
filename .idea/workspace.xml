@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4610008-60a3-48b7-b97a-0d7c1c86db4e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day8/Day8Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day8/Day8XSolution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day8/IntListListInputMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/util/Pair.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/day8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day9/Day9Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day9/Day9XSolution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day9/Direction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/days/day9/RopeMovementInputMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/day9" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/livesoftware/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/livesoftware/Main.java" afterDir="false" />
     </list>
@@ -22,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Record" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -78,11 +78,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.livesoftware.days.day9" />
       <recent name="com.livesoftware.days.day8" />
       <recent name="com.livesoftware.days.day7" />
       <recent name="com.livesoftware.days.day6" />
       <recent name="com.livesoftware.days.day5" />
-      <recent name="com.livesoftware.days.day4" />
     </key>
   </component>
   <component name="RunManager">
@@ -135,7 +135,7 @@
       <workItem from="1670353970289" duration="1175000" />
       <workItem from="1670439137922" duration="4772000" />
       <workItem from="1670520858871" duration="5988000" />
-      <workItem from="1670707924660" duration="544000" />
+      <workItem from="1670707924660" duration="4804000" />
     </task>
     <servers />
   </component>
@@ -185,8 +185,10 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="input.directories.get(&quot;ptncs&quot;).getSize()" language="JAVA" />
-        <watch expression="input.getDirectories().get(&quot;tpnspw&quot;).getDirectories().values().stream().sorted((a, b) -&gt; Long.compare(b.getSize(), a.getSize())).map(Directory::getName).toList()" language="JAVA" />
+        <watch expression="knots.get(j)" language="JAVA" />
+        <watch expression="knots.get(j + 1)" language="JAVA" />
+        <watch expression="knots" />
+        <watch expression="line" />
       </configuration>
     </watches-manager>
   </component>
