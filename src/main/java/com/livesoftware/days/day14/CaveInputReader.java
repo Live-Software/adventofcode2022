@@ -4,6 +4,7 @@ import com.livesoftware.input.InputMapper;
 import com.livesoftware.util.Pair;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -56,6 +57,7 @@ public class CaveInputReader implements InputMapper<Cave> {
     private List<Integer> numbersBetween(Integer start, Integer end) {
         return IntStream.rangeClosed(Math.min(start, end), Math.max(start, end))
                 .boxed()
+                .sorted(start < end ? Comparator.naturalOrder() : Comparator.reverseOrder())
                 .toList();
     }
 }

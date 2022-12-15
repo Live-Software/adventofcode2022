@@ -12,7 +12,7 @@ public class Day14Solution implements Solution<Cave> {
         var current = Pair.of(500, 0);
         var bottom = input.bottom();
         while (!current.getSecond().equals(bottom)) {
-            current = Pair.of(500, 0);
+            current = Pair.of(current.getFirst(), current.getSecond() - 1);
             while (!whereToFall(current, input, bottom).equals(Pair.of(0, 0))) {
                 current = whereToFall(current, input, bottom);
             }
@@ -50,11 +50,11 @@ public class Day14Solution implements Solution<Cave> {
         if (!cave.isRock(coords.getFirst(), coords.getSecond() + 1)) {
             return Pair.of(coords.getFirst(), coords.getSecond() + 1);
         }
-        if (!cave.isRock(coords.getFirst() + 1, coords.getSecond() + 1)) {
-            return Pair.of(coords.getFirst() + 1, coords.getSecond() + 1);
-        }
         if (!cave.isRock(coords.getFirst() - 1, coords.getSecond() + 1)) {
             return Pair.of(coords.getFirst() - 1, coords.getSecond() + 1);
+        }
+        if (!cave.isRock(coords.getFirst() + 1, coords.getSecond() + 1)) {
+            return Pair.of(coords.getFirst() + 1, coords.getSecond() + 1);
         }
         return Pair.of(0, 0);
     }
