@@ -2,7 +2,6 @@ package com.livesoftware.days.day15;
 
 import com.livesoftware.solver.Solution;
 import com.livesoftware.util.Pair;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -20,6 +19,16 @@ public class Day15XSolution implements Solution<Map<Pair<Integer, Integer>, Pair
         var possibleCoords = distances.entrySet().stream()
                 .flatMap(entry -> coordsOutsideSensorRange(distances, entry.getKey(), entry.getValue()))
                 .collect(Collectors.toSet());
+
+        for (var entry : distances.entrySet()) {
+            System.out.println(entry.getKey().getFirst() + " " + entry.getKey().getSecond());
+            for (int i = entry.getKey().getFirst() - entry.getValue() - 1; i <= entry.getKey().getFirst() + entry.getValue() + 1; i++) {
+                var verticalOffset = entry.getValue() + 1 + i;
+                if (isNotWithinRange(distances, entry.getKey().getSecond() + verticalOffset, entry.getKey().getFirst() + i)) {
+                    return "" + (entry.getKey().getFirst() * 4000000 + entry.getKey().getSecond());
+                }
+            }
+        }
         System.out.println(possibleCoords.size());
         return possibleCoords.stream()
                 .filter(coord -> isNotWithinRange(distances, coord.getSecond(), coord.getFirst()))
